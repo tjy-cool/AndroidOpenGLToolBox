@@ -38,9 +38,10 @@ public class GLFrameRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onDrawFrame(GL10 gl) {
-       // GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+       // GLES20.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);  // 白色
         GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);        // 设置背景色为黑色
-        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT| GLES20.GL_DEPTH_BUFFER_BIT);
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
        glProgram.drawFrame();
     }
+
 }

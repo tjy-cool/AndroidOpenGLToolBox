@@ -4,27 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/mBtn"
-            android:layout_width="match_parent"
+            android:id="@+id/btnTriangle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="按钮"/>
+            android:textAllCaps="false"
+            android:text="Triangle"/>
+
+        <Button
+            android:id="@+id/btnTriangleWithCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TriangleWithCamera"/>
+
+        <Button
+            android:id="@+id/btnTriangleColorFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TriangleColorFull"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Square"/>
+
+        <Button
+            android:id="@+id/btnSquareColorFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="TriangleSquareColorFull"/>
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <android.opengl.GLSurfaceView
-            android:id="@+id/glSV"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#000000"/>
+        android:layout_height="match_parent"
+        android:background="#000000">
     </FrameLayout>
 
 </LinearLayout>
