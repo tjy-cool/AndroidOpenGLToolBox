@@ -2,6 +2,8 @@ package com.example.androidopengltoolbox.glUtil;
 
 import android.content.Context;
 
+import com.example.androidopengltoolbox.Shape.Line;
+import com.example.androidopengltoolbox.Shape.Point;
 import com.example.androidopengltoolbox.Shape.Square;
 import com.example.androidopengltoolbox.Shape.SquareColorFull;
 import com.example.androidopengltoolbox.Shape.Triangle;
@@ -13,6 +15,12 @@ public class GLProgramFactory {
         IGLProgram glProgram = null;
 
         switch (glShape) {
+            case Point:
+                glProgram = new Point(context);
+                break;
+            case Line:
+                glProgram = new Line(context);
+                break;
             case Triangle:
                 glProgram = new Triangle(context);
                 break;

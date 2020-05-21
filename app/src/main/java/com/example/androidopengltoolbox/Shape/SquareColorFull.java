@@ -138,7 +138,6 @@ public class SquareColorFull extends IGLProgram {
             mColorHandle = GLES20.glGetAttribLocation(mProgram, "aColor");
             checkGLError("mColorHandle");
 
-
             //获取变换矩阵vMatrix成员句柄
             mMatrixHandler= GLES20.glGetUniformLocation(mProgram,"vMatrix");
             checkGLError("mMatrixHandler");
